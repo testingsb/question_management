@@ -9,19 +9,18 @@ import com.education.service.QuestionService;
 @RestController
 public class QuestionRestController {
 
-	
 	private QuestionService questionService;
 	
-	
-//	public QuestionRestController(QuestionService questionService) {
-//		System.out.println("RestController Constructro");
-//		this.questionService = questionService;
-//	}
 	
 	@Autowired
 	public void setQuestionService(QuestionService questionService) {
 		System.out.println("Autowring thru setter method");
 		this.questionService = questionService;
 	}
+	
+	public String getMSG() {
+		return "Hello world";
+	}
+	
 		//hello  heiiii
 }
